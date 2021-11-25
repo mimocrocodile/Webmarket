@@ -1,0 +1,95 @@
+.footer{
+    color:$white;
+    // height: 200px;
+    position: relative;
+    background-color: $head-bottom;
+    &__top{
+        
+        margin-bottom: 50px;
+        &__first{
+            @include average-text($avarage-plus);
+           
+            color: $white;
+            &__title{
+                position: absolute;
+                height: 68px;
+            }
+            &__nav{
+                display: flex;
+                margin: 0 0 0 372px;
+                
+                // width: 100%;
+                >div{
+                    border: none; 
+                }
+            }
+        }
+        
+        &__second{
+            display: flex;
+           
+            &__info{
+                margin-top: 41px;
+            // display: inline-flex;
+            
+                p{
+                    // display: inline-flex;
+                    color: $white;
+                    width: 320px;
+                    
+                }
+                @include average-text($average);
+            }
+            &__nav{
+                    // display: inline-flex;
+
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 23px;
+                    >div{
+                        border: none;
+                        color: #FFD180;
+                    }
+                    // 
+                    // margin-left: 150px;
+                
+            }
+         }
+    }
+    &__bottom{
+        display: flex;
+        height: 107px;
+        justify-content: center;
+        align-items: center;
+        background-color: $head-color;
+        >div{
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            >p{
+                flex: 1;
+            }
+        }
+        &__company{
+            @include average-text($average-minus);
+            color: $white;
+        }
+        &__socials{
+            div{
+            background-color: $darl-head-color;
+            border-radius: 50px;
+             display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            }
+        }
+        &__connection{
+            a{
+                text-decoration: none;
+                color: #FFD180;
+            }
+        }
+    }
+}

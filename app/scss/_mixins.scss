@@ -1,0 +1,8 @@
+@mixin average-text($font) {
+    font-size: $font;
+    font-weight: 400;
+}
+@mixin bold-text($font) {
+    font-size: $font;
+    font-weight: 700;
+}
